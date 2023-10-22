@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Mukta:wght@300&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Mukta', sans-serif;
+}
+
 .master-header {
     width: 100%;
     height: 50vh;
@@ -127,4 +132,34 @@
 
 .js-heading i {
     color: #F0DB4F;
+}
+
+.resource-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem;
+    row-gap: 5rem;
+}
+
+.resource {
+    border: 1px solid red;
+}
+
+.resource-heading {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.resource-heading a {
+    text-decoration: none;
+    color: #26afeb;
+}
+
+.resource-text {
+    font-family: 'Hind', sans-serif;
+}
+
+.resource-logo {
+    height: 2rem;
+    margin-bottom: 1rem;
 }
