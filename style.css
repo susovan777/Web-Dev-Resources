@@ -31,32 +31,66 @@
 }
 
 .social-links {
-    width: 50%;
+    /* width: 80%; */
     margin: auto;
     text-align: center;
-}
-
-.icons {
-    font-size: 3rem;
-    /* color: rgb(132, 1, 255); */
-    display: inline-block;
-    margin: 0 2rem;
-}
-.fa-brands {
-    transition: 0.3s;
 }
 
 .fa-github {
     color: black;
 }
 .fa-facebook {
-    color: #3b5998;
+    color: #0c53ec;
 }
 .fa-linkedin {
     color: #0072b1;
 }
 
-.fa-brands:hover {
-    color: rgb(155, 101, 0);
+.button {
+    width: 160px;
+    border: none;
+    outline: none;
+    background: none;
+    text-align: center;
+    font-size: 2rem;
+    /* margin: 0 1.5rem; */
+    padding: 0 3rem;
+}
+
+.button span {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.button span::after {
+    font-size: 1.5rem;
+    position: absolute;
+    opacity: 0;
+    top: 7px;
+    left: 40px;
+    transition: 0.5s;
+}
+
+.gh-btn span:after {
+    content: " GitHub";
+}
+
+.fb-btn span::after {
+    content: " Facebook";
+    color: #0c53ec;
+}
+.li-btn span::after {
+    content: " LinkedIn";
+    color: #0072b1;
+}
+
+.button:hover span{
+    padding-right: 40px;
+}
+
+.button:hover span::after {
+    left: 40px;
+    opacity: 1;
 }
 
