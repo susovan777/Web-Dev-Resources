@@ -167,3 +167,9 @@ body {
     height: 2.5rem;
     margin-bottom: 0.5rem;
 }
+
+/* --------------------------------------- */
+
+.footer-text {
+    text-align: center;
+}
